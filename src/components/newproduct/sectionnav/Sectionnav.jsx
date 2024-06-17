@@ -1,17 +1,23 @@
-// SectionNav.js
 import React from "react";
-import NavLink from "../../header/navlink/Navlink";
+import NavbarItem from "../../header/navlink/NavbarItem"; // Ensure this path is correct
 
-function SectionNav() {
+function SectionNav({ onNavClick }) {
   return (
-    <div className="flex justify-between items-center  p-4 rounded-lg font-montserrat">
-      <h4 className="text-xl text-2xl"> New Products</h4>
+    <div className="flex justify-between items-center p-4 rounded-lg font-montserrat">
+      <h4 className="text-2xl">New Products</h4>
       <nav className="flex space-x-8">
-        <NavLink href="#all">All </NavLink>
-        <NavLink href="#new">Women's</NavLink>
-        <NavLink href="#bestsellers">Men's</NavLink>
-        <NavLink href="#discounts">Accessories</NavLink>
-        <NavLink href="#discounts">Cosmetics</NavLink>
+        <NavbarItem to="/all" onClick={() => onNavClick("all")}>
+          All
+        </NavbarItem>
+        <NavbarItem to="/new" onClick={() => onNavClick("womens")}>
+          Women's
+        </NavbarItem>
+        <NavbarItem to="/bestsellers" onClick={() => onNavClick("mens")}>
+          Men's
+        </NavbarItem>
+        <NavbarItem to="/accessories" onClick={() => onNavClick("accessories")}>
+          Accessories
+        </NavbarItem>
       </nav>
     </div>
   );

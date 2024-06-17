@@ -1,9 +1,8 @@
 import React from "react";
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
-import NavLink from "./navlink/Navlink";
 import SearchIcon from "./search/Search";
-
 import Favourites from "./favouritesicons/Favourites";
+import NavbarItem from "./navlink/NavbarItem"; // Ensure this path is correct
 
 function Mainheader() {
   const heartCount = 2;
@@ -17,10 +16,10 @@ function Mainheader() {
           <span className="text-l font-bold">Pando's</span>
         </div>
         <nav className="flex-1 flex justify-center space-x-4">
-          <NavLink href="#home">Home</NavLink>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#services">Services</NavLink>
-          <NavLink href="#contact">Contact</NavLink>
+          <NavbarItem to="/home">Home</NavbarItem>
+          <NavbarItem to="/about">About</NavbarItem>
+          <NavbarItem to="/services">Services</NavbarItem>
+          <NavbarItem to="/contact">Contact</NavbarItem>
         </nav>
         <div className="flex items-center space-x-4">
           <a href="#login" className="hover:text-gray-400">

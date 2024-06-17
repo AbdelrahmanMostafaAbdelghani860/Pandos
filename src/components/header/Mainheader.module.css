@@ -4,7 +4,11 @@
   color: black;
   transition: color 0.2s ease-in-out;
 }
-
+.activeNavLink {
+  font-weight: bold; /* Example: Make the active link bold */
+  color: #ca1515; /* Example: Change color of active link */
+  /* Add other active styles as needed */
+}
 .navLink::after {
   content: "";
   position: absolute;

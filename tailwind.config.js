@@ -6,6 +6,9 @@ export default {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
       },
+      backgroundImage: {
+        homeslider: "url('/banner-1.jpg')",
+      },
     },
     plugins: [],
   },
