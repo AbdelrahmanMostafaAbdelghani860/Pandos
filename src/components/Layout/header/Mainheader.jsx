@@ -16,7 +16,7 @@ function Mainheader() {
           <span className="text-l font-bold">Pando's</span>
         </div>
         <nav className="flex-1 flex justify-center space-x-4">
-          <NavbarItem to="/home">Home</NavbarItem>
+          <NavbarItem to="/">Home</NavbarItem>
           <NavbarItem to="/about">About</NavbarItem>
           <NavbarItem to="/services">Services</NavbarItem>
           <NavbarItem to="/contact">Contact</NavbarItem>

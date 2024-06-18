@@ -6,9 +6,7 @@ function NavbarItem({ to, children, onClick }) {
   return (
     <NavLink
       to={to}
-      className={({ isActive }) =>
-        `${styles.navLink} ${isActive ? styles.activeNavLink : ""}`
-      }
+      className={({ isActive }) => `${styles.navLink} `}
       onClick={onClick}>
       {children}
     </NavLink>

@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { NavLink } from "react-router-dom";
-import styles from "../header/Mainheader.module.css";
+import styles from "../../Layout/header/Mainheader.module.css";
 function ImageSlider() {
   const settings = {
     dots: false,

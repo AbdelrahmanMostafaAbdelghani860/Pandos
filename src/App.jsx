@@ -1,19 +1,19 @@
 import "./App.css";
-import Servicesection from "./components/Servicessection/Servicesection";
-import CategoryPrev from "./components/categoryprev/Categoryprev";
-import Mainheader from "./components/header/Mainheader";
-import ImageSlider from "./components/imageSlider/Imageslider";
-import Newproduct from "./components/newproduct/Newproduct";
+import Home from "./components/Home/Home";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout/Layout";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
-    <div className="font-montserrat">
-      <Mainheader></Mainheader>
-      <CategoryPrev />
-      <Newproduct />
-      <ImageSlider />
-      <Servicesection />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="contact" element={<Contact />} />
+        </Route>
+      </Routes>
+    </Router>
   );
 }
 

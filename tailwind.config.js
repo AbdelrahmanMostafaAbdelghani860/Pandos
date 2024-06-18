@@ -5,6 +5,7 @@ export default {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
+        cookie_regular: ["Cookie", "cursive"],
       },
       backgroundImage: {
         homeslider: "url('/banner-1.jpg')",
