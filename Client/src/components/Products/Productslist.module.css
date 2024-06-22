@@ -1,0 +1,11 @@
+.input {
+  border: none; /* Remove all borders initially */
+  border-bottom: 2px solid #ca1515; /* Only add the bottom border */
+  padding: 0.5rem 0;
+  width: 100%;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+}
+
+.input-bottom-border:focus {
+  outline: none; /* Remove the default focus outline */
+}

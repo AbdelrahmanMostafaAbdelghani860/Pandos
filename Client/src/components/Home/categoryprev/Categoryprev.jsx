@@ -12,36 +12,39 @@ function CategoryPrev() {
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 flex flex-col justify-center items-center bg-black bg-opacity-50 text-white p-4">
-          <h2 className="text-xl font-bold">Category 1</h2>
-          <a href="#link1" className={`mt-2 ${styles.navLink}`}>
+          <h2 className="text-2xl font-bold">Women</h2>
+          <a href="/product" className={`mt-2 ${styles.navLink}`}>
             Learn More
           </a>
-          <p className="mt-2">Description for category 1</p>
+          <p className="mt-2">
+            Elevate your style with our chic and trendy women's clothing and
+            accessories.
+          </p>
         </div>
       </div>
       <ImageCard
         src="/category-2.jpg"
-        title="Category 2"
-        link="category"
-        description="Description for category 2"
+        title="Men"
+        link="/product"
+        description="Discover the latest trends our stylish collection for men."
       />
       <ImageCard
         src="/category-3.jpg"
-        title="Category 3"
-        link="#link3"
-        description="Description for category 3"
+        title="Accessories"
+        link="/product"
+        description="Complete your look with our diverse selection of accessories."
       />
       <ImageCard
         src="/category-4.jpg"
-        title="Category 4"
-        link="#link4"
-        description="Description for category 4"
+        title="Cosmetics"
+        link="/product"
+        description="Enhance your beauty with our cosmetics and skincare products."
       />
       <ImageCard
         src="/category-5.jpg"
-        title="Category 5"
-        link="#link5"
-        description="Description for category 5"
+        title="Kids"
+        link="/product"
+        description="Find adorable outfits for your little ones in our kids' clothing."
       />
     </div>
   );

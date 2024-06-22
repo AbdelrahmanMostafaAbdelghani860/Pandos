@@ -6,7 +6,7 @@ function Register() {
   };
 
   return (
-    <div className="bg-white shadow-md rounded-lg p-8 max-w-md mx-auto my-32">
+    <div className="bg-white shadow-md rounded-lg p-8 max-w-md mx-auto mb-[144px] mt-64">
       <h2 className="text-2xl font-semibold text-[#ca1515] mb-6 text-center">
         Register
       </h2>
