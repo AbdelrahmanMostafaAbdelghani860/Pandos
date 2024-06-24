@@ -7,7 +7,9 @@ function NavbarItem({ to, children, onClick }) {
     <NavLink
       to={to}
       className={({ isActive }) =>
-        `${styles.navLink} ${isActive ? "text-[#ca1515] font-bold" : ""}`
+        `${styles.navLink} dark:text-[#d1d5db] ${
+          isActive ? "text-[#ca1515] font-bold" : ""
+        }`
       }
       onClick={onClick}>
       {children}

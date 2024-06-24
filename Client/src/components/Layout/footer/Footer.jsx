@@ -4,8 +4,8 @@ import { NavLink } from "react-router-dom";
 import "./Footer.css";
 function Footer() {
   return (
-    <footer>
-      <div className="w-full bg-[#ca1515] text-white relative   py-8">
+    <footer className="">
+      <div className="w-full bg-[#ca1515] text-white relative dark:text-white dark:bg-[#374151] py-8">
         <div className="container mx-auto px-4">
           <div className="flex flex-wrap justify-between">
             <div className="w-full md:w-1/3 text-center md:text-left mb-4 md:mb-0">

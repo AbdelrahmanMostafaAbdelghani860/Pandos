@@ -7,7 +7,7 @@ function Layout() {
   return (
     <>
       <Mainheader />
-      <main>
+      <main className="dark:text-[#d1d5db] dark:bg-[#111827]">
         <Outlet />
       </main>
       <Footer />

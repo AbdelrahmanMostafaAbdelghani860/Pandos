@@ -10,12 +10,14 @@ function Hoverimage({ imageSrc, hoverText }) {
         alt="Hover"
         className={`w-full h-full  ${styles.hoverImage}`}
       />
-      <span className={styles.hoverText}>{hoverText}</span>
+      <span className={`${styles.hoverText} dark:text-[#d1d5db]`}>
+        {hoverText}
+      </span>
       <a
         href="https://www.instagram.com/pandos_eg"
         className={styles.hoverText_2}
         target="_blank">
-        <FaInstagram />
+        <FaInstagram className="dark:text-[#d1d5db]" />
       </a>
     </div>
   );

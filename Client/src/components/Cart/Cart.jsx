@@ -11,10 +11,18 @@ function Cart() {
   }, []);
 
   return (
-    <div className="container mx-auto mt-16">
-      <h2 className="text-2xl font-semibold text-center mb-6">Your Cart</h2>
+    <div className="container mx-auto pt-16 dark:bg-[#111827]">
+      <h2 className="text-4xl font-semibold text-center mb-6 mt-32">
+        Your Cart
+      </h2>
       {cartProducts.length === 0 ? (
-        <p className="text-center">Your cart is empty.</p>
+        <div className="  justify-center items-center pt-16  pb-60">
+          {" "}
+          <h2 className="text-center text-3xl mb-10 font-semibold ">
+            Your cart is empty.
+          </h2>{" "}
+          <img src="/cart.jpg" className="mx-auto h-[300px] "></img>
+        </div>
       ) : (
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {cartProducts.map((product, index) => (
@@ -22,7 +30,7 @@ function Cart() {
               <img
                 src={product.image}
                 alt={product.title}
-                className="w-full h-48 object-cover mb-4"
+                className="w-full h-48 object-cover mb-4 "
               />
               <h3 className="text-xl font-semibold mb-2">{product.title}</h3>
               <p className="text-gray-500 mb-2">{product.description}</p>

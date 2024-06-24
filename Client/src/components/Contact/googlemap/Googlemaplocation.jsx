@@ -13,7 +13,7 @@ const center = {
 
 function Googlemaplocation() {
   return (
-    <div className="w-full max-w-md mx-auto mt-16 p-2">
+    <div className="w-full max-w-md mx-auto mt-16 p-2 dark:bg-[#374151] dark:p-2">
       <LoadScript googleMapsApiKey="AIzaSyB-9TP8Qq7N7orJ08ZiwLHUU2yqN5omwcs">
         <GoogleMap
           mapContainerStyle={containerStyle}

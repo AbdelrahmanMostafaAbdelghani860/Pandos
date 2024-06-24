@@ -3,7 +3,7 @@ import { FaMapMarkerAlt, FaPhoneAlt, FaHeadphones } from "react-icons/fa";
 
 function LocationInfo() {
   return (
-    <div className="bg-white  mt-16 p-10">
+    <div className="bg-white  mt-16 p-10 dark:bg-[#1f2937] dark:text-[#d1d5db]">
       <h2 className="text-2xl font-semibold  mb-6 ">Our Location</h2>
       <div className=" font-semibold">
         <h2 className="my-2 mt-4">
@@ -27,12 +27,12 @@ function LocationInfo() {
       <form>
         <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-gray-700 dark:text-[#d1d5db] text-sm font-bold mb-2"
             htmlFor="name">
             Name
           </label>
           <input
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#ca1515]"
+            className="w-full px-3 py-2 border  border-gray-300 rounded-lg focus:outline-none focus:border-[#ca1515] dark:bg-[#374151]"
             id="name"
             type="text"
             placeholder="Your Name"
@@ -40,12 +40,12 @@ function LocationInfo() {
         </div>
         <div className="mb-4">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-gray-700 text-sm dark:text-[#d1d5db] font-bold mb-2"
             htmlFor="email">
             Email
           </label>
           <input
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#ca1515]"
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#ca1515] dark:bg-[#374151]"
             id="email"
             type="email"
             placeholder="Your Email"
@@ -53,12 +53,12 @@ function LocationInfo() {
         </div>
         <div className="mb-6">
           <label
-            className="block text-gray-700 text-sm font-bold mb-2"
+            className="block text-gray-700 dark:text-[#d1d5db] text-sm font-bold mb-2"
             htmlFor="message">
             Message
           </label>
           <textarea
-            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#ca1515]"
+            className="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[#ca1515] dark:bg-[#374151]"
             id="message"
             placeholder="Your Message"
             rows="4"></textarea>
