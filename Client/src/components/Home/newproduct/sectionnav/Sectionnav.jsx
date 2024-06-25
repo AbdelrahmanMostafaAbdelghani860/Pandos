@@ -1,5 +1,4 @@
 import React from "react";
-import NavbarItem from "../../../Layout/header/navlink/NavbarItem"; // Ensure this path is correct
 import NavbarBarItem from "./Navlink";
 
 function SectionNav({ onNavClick }) {
@@ -15,9 +14,6 @@ function SectionNav({ onNavClick }) {
         </NavbarBarItem>
         <NavbarBarItem to="#" onClick={() => onNavClick("mens")}>
           Men's
-        </NavbarBarItem>
-        <NavbarBarItem to="#" onClick={() => onNavClick("accessories")}>
-          Accessories
         </NavbarBarItem>
       </nav>
     </div>

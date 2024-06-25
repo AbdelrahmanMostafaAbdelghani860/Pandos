@@ -1,32 +1,28 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FaShoppingCart, FaHeart } from "react-icons/fa";
+import CartContext from "../../../../Context/Cart.jsx";
 
 function ProductCard({ id, image, title, price, description }) {
   const [isHeartRed, setHeartRed] = useState(false);
   const [isCartRed, setCartRed] = useState(false);
-  const [products, setProduct] = useState([]);
+  const { addToCart, removeFromCart } = useContext(CartContext);
+
   const handleOnClickProduct = () => {
     if (!isCartRed) {
       setCartRed(true);
-      setProduct((prevProducts) => [...prevProducts, title]);
+      addToCart({ id, title, price, image, description });
     } else {
       setCartRed(false);
-      setProduct((prevProducts) =>
-        prevProducts.filter((p) => {
-          p !== title;
-        })
-      );
+      removeFromCart({ id });
     }
   };
-  useEffect(() => {
-    localStorage.setItem("cartproduct", JSON.stringify(products));
-  }, [products]);
+
   return (
     <div className="relative bg-white dark:bg-[#1f2937] dark:text-[white] shadow-md rounded-lg overflow-hidden transform transition-transform duration-1000 text-center flex flex-col justify-between h-full">
       <img src={image} alt={title} className="w-full" />
       <p className="p-3 font-semibold text-[#ca1515] dark:text-[#d1d5db]">
         {" "}
-        {title}{" "}
+        {title}
       </p>
       <p className="text-gray-500	">{description}</p>
       <p className="p-3 b-0 dark:text-red-400 dark:font-bold "> €{price} </p>

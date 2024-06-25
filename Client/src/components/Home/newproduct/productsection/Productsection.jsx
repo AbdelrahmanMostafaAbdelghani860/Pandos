@@ -5,7 +5,7 @@ import ProductCard from "../productcard/Productcard";
 const products = [
   {
     id: 1,
-    category: "all",
+    category: "womens",
     image: "/product-1.jpg",
     title: "Buttons tweed blazer",
     description:
@@ -14,7 +14,7 @@ const products = [
   },
   {
     id: 2,
-    category: "womens",
+    category: "mens",
     image: "/product-2.jpg",
     title: "Fit micro corduroy shirt",
     description:
@@ -23,7 +23,7 @@ const products = [
   },
   {
     id: 3,
-    category: "mens",
+    category: "womens",
     image: "/product-3.jpg",
     title: "Slim striped pocket shirt",
     description:
@@ -32,7 +32,7 @@ const products = [
   },
   {
     id: 4,
-    category: "accessories",
+    category: "mens",
     image: "/product-4.jpg",
     title: "Cotton T-shirt",
     description:
@@ -59,7 +59,7 @@ const products = [
   },
   {
     id: 7,
-    category: "mens",
+    category: "womens",
     image: "/product-7.jpg",
     title: "Product 7",
     description:
@@ -68,9 +68,9 @@ const products = [
   },
   {
     id: 8,
-    category: "accessories",
+    category: "mens",
     image: "/product-8.jpg",
-    title: "Product 8",
+    title: "Chemise beach",
     description:
       "This trendy handbag is perfect for both casual outings and formal events. Spacious and stylish, it complements any attire.",
     price: "23",

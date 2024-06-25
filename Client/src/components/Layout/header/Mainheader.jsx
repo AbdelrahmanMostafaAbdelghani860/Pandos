@@ -1,12 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { FaHeart, FaShoppingCart } from "react-icons/fa";
-import SearchIcon from "./search/Search";
 import Favourites from "./favouritesicons/Favourites";
 import NavbarItem from "./navlink/NavbarItem";
+import CartContext from "../../../Context/Cart";
 
 function Mainheader() {
   const heartCount = 2;
-  const cartCount = 3; // This will be updated from local storage in future
+  const { cartItems } = useContext(CartContext);
+  const cartCount = cartItems.length;
 
   return (
     <header className="fixed z-10 top-0 w-full bg-white text-black shadow-md dark:bg-[#1f2937] dark:text-[#d1d5db]">
