@@ -1,11 +1,14 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import Loading from "../Loading/Loading";
 import { useSearchParams } from "react-router-dom";
+import CartContext from "../../Context/Cart";
+import { FaShoppingCart } from "react-icons/fa";
 function Productslist() {
   const [products, setProducts] = useState([]);
   const [searchterm, setSearchterm] = useState("");
   const [loading, setLoading] = useState(false);
   const [searchParams, setSearchParams] = useSearchParams();
+  const [isCartRed, setCartRed] = useState(false);
   const getProducts = async () => {
     setLoading(true);
     const data = await fetch("https://ecommerce.routemisr.com/api/v1/products");
@@ -13,6 +16,10 @@ function Productslist() {
     setProducts(response.data);
     setLoading(false);
   };
+
+  const { addToCart, removeFromCart } = useContext(CartContext);
+
+  // const handleOnClickProduct
 
   useEffect(() => {
     getProducts();
@@ -66,6 +73,30 @@ function Productslist() {
               <p className="p-3 b-0 text-semibold text-xl">
                 €{product.price / 50}
               </p>
+              <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
+                <div className="flex space-x-4">
+                  <FaShoppingCart
+                    className={` ${
+                      isCartRed ? "text-red-500 " : "text-white"
+                    } text-2xl transform translate-y-12  transition-transform duration-300 cursor-pointer`}
+                    onClick={() => {
+                      if (!isCartRed) {
+                        setCartRed(true);
+                        addToCart({
+                          id: product._id,
+                          title: product.title,
+                          price: product.price / 50,
+                          image: product.imageCover,
+                          description: product.description,
+                        });
+                      } else {
+                        setCartRed(false);
+                        removeFromCart({ id: product._id });
+                      }
+                    }}
+                  />
+                </div>
+              </div>
             </div>
           ))
         )}

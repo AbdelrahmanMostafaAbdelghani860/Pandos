@@ -5,7 +5,6 @@ import NavbarItem from "./navlink/NavbarItem";
 import CartContext from "../../../Context/Cart";
 
 function Mainheader() {
-  const heartCount = 2;
   const { cartItems } = useContext(CartContext);
   const cartCount = cartItems.length;
 
@@ -27,7 +26,6 @@ function Mainheader() {
             Login/Register
           </a>
 
-          <Favourites icon={FaHeart} count={heartCount} />
           <Favourites icon={FaShoppingCart} count={cartCount} />
         </div>
       </div>

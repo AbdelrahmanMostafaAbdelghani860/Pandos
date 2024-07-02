@@ -3,7 +3,6 @@ import { FaShoppingCart, FaHeart } from "react-icons/fa";
 import CartContext from "../../../../Context/Cart.jsx";
 
 function ProductCard({ id, image, title, price, description }) {
-  const [isHeartRed, setHeartRed] = useState(false);
   const [isCartRed, setCartRed] = useState(false);
   const { addToCart, removeFromCart } = useContext(CartContext);
 
@@ -29,14 +28,6 @@ function ProductCard({ id, image, title, price, description }) {
 
       <div className="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 hover:opacity-100 transition-opacity duration-300">
         <div className="flex space-x-4">
-          <FaHeart
-            className={` ${
-              isHeartRed ? "text-red-500 " : "text-white"
-            } text-2xl transform translate-y-12  transition-transform duration-300 cursor-pointer`}
-            onClick={() => {
-              setHeartRed(!isHeartRed);
-            }}
-          />
           <FaShoppingCart
             className={` ${
               isCartRed ? "text-red-500 " : "text-white"

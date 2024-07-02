@@ -35,7 +35,7 @@ function Footer() {
               <h2 className="text-2xl font-semibold">Follow Us</h2>
               <div className="flex justify-center md:justify-end mt-2 space-x-4">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/PandosStore"
                   className="hover:text-gray-300"
                   target="_blank">
                   <FaFacebook className="text-2xl" />

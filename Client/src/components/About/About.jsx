@@ -3,7 +3,9 @@ import styles from "./About.module.css";
 
 function About() {
   return (
-    <div className="dark:bg-[#111827] dark:text-[#d1d5db] dark:py-1 ">
+    <div
+      data-testid="about-test-1"
+      className="dark:bg-[#111827] dark:text-[#d1d5db] dark:py-1 ">
       <div className={`${styles.container} dark:bg-[#374151] `}>
         <div className={`${styles.layer} bg-[#191919] dark:bg-red-900`}></div>
         <h2

@@ -43,7 +43,7 @@ const products = [
     id: 5,
     category: "mens",
     image: "/product-5.jpg",
-    title: "Product 5",
+    title: "Fit shirt",
     description:
       "These jeans offer a modern fit and durable fabric for everyday wear. Style and durability meet in this wardrobe essential.",
     price: "39",
@@ -61,7 +61,7 @@ const products = [
     id: 7,
     category: "womens",
     image: "/product-7.jpg",
-    title: "Product 7",
+    title: "pocket shirt",
     description:
       "Crafted from genuine leather, this wallet combines style and functionality. Keep your essentials organized with ease.",
     price: "21",

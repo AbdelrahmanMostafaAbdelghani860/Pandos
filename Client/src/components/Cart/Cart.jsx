@@ -102,7 +102,7 @@ function Cart() {
             </table>
             <div className="text-right ">
               <h3 className="text-2xl font-semibold p-10 text-[#ca1515]  dark:text-[#d1d5db]">
-                Total <br /> <br /> € {totalPrice}
+                Total <br /> <br /> € {totalPrice.toFixed(2)}
               </h3>
             </div>
           </div>

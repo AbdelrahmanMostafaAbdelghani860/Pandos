@@ -36,7 +36,7 @@ export const CartProvider = ({ children }) => {
     }
   };
 
-  // Increase quantity of an item
+  // increase quantity of an item
   const increaseQuantity = (item) => {
     setCartItems(
       cartItems.map((cartItem) =>
