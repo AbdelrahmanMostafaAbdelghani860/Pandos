@@ -27,7 +27,7 @@ function Home() {
             <Hoverimage
               key={index}
               imageSrc={image.src}
-              hoverText={"@pandos_eg"}
+              hoverText={"@pandos_ege"}
             />
           ))}
         </div>
